@@ -117,6 +117,9 @@ ul {
 }
 
 .site-nav .link {
+	position: relative;
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 	display: block;
 	padding-top: 32px;
 	padding-bottom: 32px;
@@ -135,6 +138,21 @@ ul {
 .site-nav .link:hover,
 .site-nav .link:focus {
 	color: var(--accent-color);
+}
+
+/* .site-nav .list {
+	position: relative;
+} */
+
+.site-nav .item:hover::after {
+	/* position: absolute; */
+	bottom: 19px;
+	content: "";
+	display: block;
+	height: 4px;
+	background-color: var(--accent-color);
+	border-radius: 2px;
+	overflow: hidden;
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -150,6 +168,8 @@ ul {
 }
 
 .contacts-list .link {
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 	align-items: center;
 	display: flex;
 	color: var(--title-text-color);
@@ -164,7 +184,6 @@ ul {
 .contacts-list .link:focus,
 .contacts-list .link:hover {
 	color: var(--accent-color);
-	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-mail {
@@ -242,7 +261,6 @@ ul {
 	left: 50%;
 	transform: translate(-50%, -50%) scale(1);
 	visibility: visible;
-	transition: ;
 
 	/* padding: 8px; */
 	width: 528px;
@@ -250,6 +268,7 @@ ul {
 	background-color: var(--primery-fon-color);
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opasity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-modal {
@@ -270,9 +289,6 @@ ul {
 	/* right: 110px; */
 }
 
-.icon-Modal {
-}
-
 /*button*/
 
 button {
@@ -280,6 +296,7 @@ button {
 }
 
 .button {
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	flex-wrap: wrap;
 	margin-right: auto;
 	margin-left: auto;
@@ -305,10 +322,10 @@ button {
 	color: var(--accent-color);
 	background-color: var(--text-color-footer);
 	border-color: var(--primery-fon-color);
-	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-name {
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	align-items: center;
 
 	border-radius: 4px;
@@ -332,7 +349,6 @@ button {
 	background-color: var(--accent-color);
 	border-color: var(--accent-color);
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* navigation */
@@ -545,6 +561,8 @@ button {
 }
 
 .icons-comand {
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 	display: flex;
 	height: 100%;
 	width: 100%;
@@ -576,7 +594,6 @@ button {
 .icons-comand:focus {
 	background-color: var(--accent-color);
 	color: #fff;
-	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*section-title Особености*/
@@ -643,6 +660,8 @@ button {
 }
 
 .proect-section {
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 	position: relative;
 	width: 370px;
 	height: 404px;
@@ -660,12 +679,10 @@ button {
 .proect-section:hover,
 .proect-section:focus {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .proect-title:hover .submenu {
 	display: block;
-	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .proect-title {
@@ -734,6 +751,7 @@ img {
 	color: var(--primery-fon-color);
 	background: rgba(33, 150, 243, 0.9);
 	display: none;
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ______________  */
@@ -760,6 +778,8 @@ img {
 }
 
 .section-item-clients {
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 	margin-right: 30px;
 	width: 170px;
 	height: 92px;
@@ -768,6 +788,8 @@ img {
 	border-radius: 4px;
 }
 .section-item-clients:nth-child(6) {
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 	margin-right: 0px;
 }
 .client-list {
@@ -777,6 +799,8 @@ img {
 }
 
 .icons-clients {
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 	display: flex;
 	height: 100%;
 	width: 100%;
@@ -791,13 +815,11 @@ img {
 .icons-clients:focus {
 	color: rgba(33, 150, 243, 1);
 	fill: rgba(33, 150, 243, 1);
-	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-item-clients:focus,
 .section-item-clients:hover {
 	border: 1px solid rgba(33, 150, 243, 1);
-	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*--Page Footer--*/
 
